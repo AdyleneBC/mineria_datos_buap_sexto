@@ -36,7 +36,7 @@ def leer_datos(nombre_archivo, tiene_clase=True):
             #Si el archivo contiene clase (train o test)
             if tiene_clase:
                 #Se guarda (atributos, clase)
-                datos.append((x, partes[4]))
+                datos.append((x, partes[4])) #final --> ([5.1, 3.5, 1.4, 0.2], "Iris-setosa")
             else:
                 #Si no hay clase (new data), solo se guardan los atributos
                 datos.append(x)
